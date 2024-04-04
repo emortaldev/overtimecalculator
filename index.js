@@ -1,4 +1,3 @@
-calculateQuota()
 function calculateQuota() {
     let quota = document.getElementById("quotaInput").value;
     let totalSold = document.getElementById("totalSoldInput").value;

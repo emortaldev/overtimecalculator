@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "3270-regular";
+    src: url("../overtimecalculator/3270-Regular.woff2") format("woff2");
+    /*src: url("https://github.com/emortaldev/overtimecalculator/raw/main/3270-Regular.woff2") format("woff2");*/
+}
+
+* {
+    font-family: "3270-regular", sans-serif;
+}
