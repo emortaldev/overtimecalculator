@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overtime Calculator</title>
+    <script src="index.js"></script>
+</head>
+<body>
+<label for="quotaInput">Quota: </label><input value="130" type="number" id="quotaInput" name="Quota" min="0" oninput="calculateQuota()" required />
+<br>
+<label for="totalSoldInput">Total sold: </label><input value="300" type="number" id="totalSoldInput" name="Total sold" min="0" oninput="calculateQuota()" required />
+<br>
+<label for="deadlineDaysInput">Days until deadline: </label><input value="0" type="number" id="deadlineDaysInput" name="Days until deadline" min="0" max="3" oninput="calculateQuota()" required />
+<br>
+Overtime: <p id="overtime">34</p>
+</body>
+</html>
