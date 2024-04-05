@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Overtime Calculator</title>
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-<label for="quotaInput">Quota: </label><input value="130" type="number" id="quotaInput" name="Quota" min="0" oninput="calculateQuota()" required />
-<br>
-<label for="totalSoldInput">Total sold: </label><input value="300" type="number" id="totalSoldInput" name="Total sold" min="0" oninput="calculateQuota()" required />
-<br>
-<label for="deadlineDaysInput">Days until deadline: </label><input value="0" type="number" id="deadlineDaysInput" name="Days until deadline" min="0" max="3" oninput="calculateQuota()" required />
-<br>
-Overtime: <p id="overtime">34</p>
+    <div class="child">
+        PROFIT<br>
+        QUOTA:<br>
+        <input autocomplete="false" value="250" class="input" maxlength="10" id="totalSoldInput" name="Total sold"/>/
+        <br>
+        <input autocomplete="false" value="130" class="input" maxlength="10" id="quotaInput" name="Quota"/>
+    </div>
+    <div class="child">
+        DEADLINE:<br>
+        <input autocomplete="false" class="input" type="number" size="2" id="deadlineDaysInput" name="Days until deadline" min="0" max="3"/>Days
+    </div>
+    <div class="child">
+        OVERTIME<br>
+        BONUS:<br>
+        <div id="overtime">$0</div>
+    </div>
 </body>
 </html>
