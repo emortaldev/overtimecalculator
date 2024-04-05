@@ -28,6 +28,7 @@ function calculateQuota() {
     if (deadlineDaysVal === 0) deadlineDaysVal = -1;
 
     let overtimeBonus = Math.max(0, Math.round((totalSold.value - quota.value) / 5 + 15 * deadlineDaysVal));
+    if (totalSold.value < quota) overtimeBonus = 0;
     if (isNaN(overtimeBonus)) return;
     document.getElementById("overtime").innerHTML = "$" + overtimeBonus;
 }
